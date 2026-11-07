@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CFR_CONDITIONS, CFRCondition } from '../data/cfrRatingDatabase';
+import { copyToClipboard } from '../utils/clipboard';
 import { ShieldCheck, AlertTriangle, FileText, Copy, Download, HelpCircle } from 'lucide-react';
 
 interface Props {
@@ -82,8 +83,8 @@ Submitted via VetNexus 305 Claim Evidence Co-Pilot
 ================================================================================`;
   };
 
-  const copyStatement = () => {
-    navigator.clipboard.writeText(generateStatementText());
+  const copyStatement = async () => {
+    await copyToClipboard(generateStatementText());
     onNotify('VA Form 21-4138 Statement copied to clipboard!');
   };
 

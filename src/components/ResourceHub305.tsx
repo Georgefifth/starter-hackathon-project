@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RESOURCES_305, VeteranResource305 } from '../data/resources305';
+import { copyToClipboard } from '../utils/clipboard';
 import { MapPin, Phone, Globe, Shield, Search, ExternalLink, HeartPulse, Building2, GraduationCap, AlertOctagon } from 'lucide-react';
 
 interface Props {
@@ -28,8 +29,8 @@ export const ResourceHub305: React.FC<Props> = ({ onNotify }) => {
     return categoryMatch && queryMatch;
   });
 
-  const handleCopyContact = (res: VeteranResource305) => {
-    navigator.clipboard.writeText(`${res.name}\nPhone: ${res.phone}\nAddress: ${res.location}\nWeb: ${res.website}`);
+  const handleCopyContact = async (res: VeteranResource305) => {
+    await copyToClipboard(`${res.name}\nPhone: ${res.phone}\nAddress: ${res.location}\nWeb: ${res.website}`);
     onNotify(`Copied ${res.name} contact info!`);
   };
 

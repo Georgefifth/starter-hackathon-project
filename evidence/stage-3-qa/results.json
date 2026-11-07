@@ -1,0 +1,141 @@
+{
+  "targetUrl": "http://localhost:4173",
+  "browser": "chromium",
+  "startedAt": "2026-11-07T01:59:13.761Z",
+  "finishedAt": "2026-11-07T01:59:23.450Z",
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "viewport": "desktop",
+      "id": "smoke",
+      "title": "[P0] Landing Page Renders & Header Operational",
+      "status": "pass",
+      "ms": 648,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "p0-mos-translation",
+      "title": "[P0] MOS Selection, STAR Bullets & Copy Feedback",
+      "status": "pass",
+      "ms": 1184,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p0-mos-translation-mos-selected-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "p0-va-claim-nexus",
+      "title": "[P0] 38 CFR VA Claim Nexus Auditor & Statement Synthesis",
+      "status": "pass",
+      "ms": 1229,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p0-va-claim-nexus-va-claim-airtight-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "p1-305-resources",
+      "title": "[P1] 305 South Florida Veteran Hub & Search Filter",
+      "status": "pass",
+      "ms": 911,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p1-305-resources-305-resources-search-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "p1-privacy-governance",
+      "title": "[P1] Privacy Guarantee & Local Data Audit",
+      "status": "pass",
+      "ms": 631,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p1-privacy-governance-privacy-audit-desktop.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "smoke",
+      "title": "[P0] Landing Page Renders & Header Operational",
+      "status": "pass",
+      "ms": 764,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "p0-mos-translation",
+      "title": "[P0] MOS Selection, STAR Bullets & Copy Feedback",
+      "status": "pass",
+      "ms": 1213,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p0-mos-translation-mos-selected-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "p0-va-claim-nexus",
+      "title": "[P0] 38 CFR VA Claim Nexus Auditor & Statement Synthesis",
+      "status": "pass",
+      "ms": 1289,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p0-va-claim-nexus-va-claim-airtight-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "p1-305-resources",
+      "title": "[P1] 305 South Florida Veteran Hub & Search Filter",
+      "status": "pass",
+      "ms": 977,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p1-305-resources-305-resources-search-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "p1-privacy-governance",
+      "title": "[P1] Privacy Guarantee & Local Data Audit",
+      "status": "pass",
+      "ms": 666,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/p1-privacy-governance-privacy-audit-mobile.png"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MOS_DATABASE, MOSProfile, STARBullet } from '../data/mosDatabase';
+import { copyToClipboard } from '../utils/clipboard';
 import { Briefcase, ShieldCheck, CheckCircle2, Copy, Download, Search, Sparkles, AlertCircle } from 'lucide-react';
 
 interface Props {
@@ -40,13 +41,13 @@ export const MOSCareerBridge: React.FC<Props> = ({ onNotify }) => {
     }
   };
 
-  const copyBullet = (bullet: STARBullet) => {
+  const copyBullet = async (bullet: STARBullet) => {
     const text = `• ${bullet.atsSummary}\n  - Situation: ${bullet.situation}\n  - Action: ${bullet.action}\n  - Impact: ${bullet.result}`;
-    navigator.clipboard.writeText(text);
+    await copyToClipboard(text);
     onNotify('Copied STAR bullet point to clipboard!');
   };
 
-  const copyAllMarkdown = () => {
+  const copyAllMarkdown = async () => {
     const content = `# Military Service Record Translation
 **Branch:** ${selectedMOS.branch} | **Rating/MOS:** ${selectedMOS.code} - ${selectedMOS.militaryTitle}
 **Clearance:** ${selectedMOS.clearanceLevel} | **Rank:** ${payGrade} (${yearsOfService} Years)
@@ -72,7 +73,7 @@ ${selectedMOS.starBullets.map((b, idx) => `
 ${selectedMOS.certifications.map(c => `- ${c}`).join('\n')}
 `;
 
-    navigator.clipboard.writeText(content);
+    await copyToClipboard(content);
     onNotify('Full ATS Resume Dossier copied as Markdown!');
   };
 
