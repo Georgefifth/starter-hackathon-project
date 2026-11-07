@@ -190,7 +190,7 @@ export const MOS_DATABASE: MOSProfile[] = [
     clearanceLevel: 'Top Secret / SCI',
     primaryDuties: 'Analyzed global threat environments, adversary electronic signatures, air defense systems, and briefed combat aviators on mission hazards.',
     atsKeywords: [
-      'Geopolitical Risk Analysis', 'Targeting Analysis', 'Air Defense Threat Modeling',
+      'Threat Modeling', 'Geopolitical Risk Analysis', 'Targeting Analysis', 'Air Defense Threat Modeling',
       'Sensor Fusion', 'Strategic Briefings', 'Data Dissemination'
     ],
     certifications: ['Certified Threat Intelligence Analyst (CTIA)', 'PMP', 'Scrum Master (CSM)'],

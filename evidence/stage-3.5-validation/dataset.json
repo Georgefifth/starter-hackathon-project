@@ -1,0 +1,181 @@
+[
+  {
+    "id": "VAL-MOS-01",
+    "tier": "Basic",
+    "branch": "Army",
+    "mos": "25B",
+    "source": "O*NET 15-1244.00 / DoD MOS Specification",
+    "expectedTitleMatch": "Information Technology Specialist",
+    "expectedATSKeywords": [
+      "Active Directory",
+      "TCP/IP",
+      "Cisco IOS"
+    ],
+    "expectedCivilianRoles": [
+      "Systems Administrator",
+      "IT Infrastructure Engineer"
+    ]
+  },
+  {
+    "id": "VAL-MOS-02",
+    "tier": "Basic",
+    "branch": "Army",
+    "mos": "11B",
+    "source": "DoD Military Career Guide / O*NET 55-3016.00",
+    "expectedTitleMatch": "Infantryman / Team Leader",
+    "expectedATSKeywords": [
+      "Operational Leadership",
+      "Risk Mitigation",
+      "Asset Protection"
+    ],
+    "expectedCivilianRoles": [
+      "Operations & Logistics Manager",
+      "Field Safety Director"
+    ]
+  },
+  {
+    "id": "VAL-MOS-03",
+    "tier": "Intermediate",
+    "branch": "Navy",
+    "mos": "IT",
+    "source": "Navy Enlisted Occupational Standards (NAVPERS 18068F)",
+    "expectedTitleMatch": "Information Systems Technician",
+    "expectedATSKeywords": [
+      "Satellite Communications",
+      "Cisco Routing",
+      "LAN/WAN Architecture"
+    ],
+    "expectedCivilianRoles": [
+      "Network Administrator",
+      "Cybersecurity Operations Specialist"
+    ]
+  },
+  {
+    "id": "VAL-MOS-04",
+    "tier": "Intermediate",
+    "branch": "Air Force",
+    "mos": "1N0X1",
+    "source": "Air Force Enlisted Classification Directory (AFECD)",
+    "expectedTitleMatch": "All Source Intelligence Analyst",
+    "expectedATSKeywords": [
+      "Threat Modeling",
+      "Sensor Fusion",
+      "Geopolitical Risk Analysis"
+    ],
+    "expectedCivilianRoles": [
+      "Strategic Threat Intelligence Consultant",
+      "Operations Research Analyst"
+    ]
+  },
+  {
+    "id": "VAL-MOS-05",
+    "tier": "Intermediate",
+    "branch": "Coast Guard",
+    "mos": "MST",
+    "source": "USCG Rating Manual COMDTINST M1414.8",
+    "expectedTitleMatch": "Marine Science Technician",
+    "expectedATSKeywords": [
+      "HAZMAT Compliance",
+      "OSHA & EPA Regulations",
+      "Port Security"
+    ],
+    "expectedCivilianRoles": [
+      "Environmental Health & Safety (EHS) Manager",
+      "Port Safety & Regulatory Inspector"
+    ]
+  },
+  {
+    "id": "VAL-CFR-01",
+    "tier": "Basic",
+    "code": "6100",
+    "name": "Tinnitus",
+    "source": "38 CFR § 4.87, Schedule of ratings - ear",
+    "expectedMaxSchedular": 10,
+    "expectedDBQ": "VA Form 21-0960N-1"
+  },
+  {
+    "id": "VAL-CFR-02",
+    "tier": "Intermediate",
+    "code": "9411",
+    "name": "PTSD",
+    "source": "38 CFR § 4.130, Schedule of ratings for mental disorders",
+    "expectedMaxSchedular": 100,
+    "expectedDBQ": "VA Form 21-0960P-3"
+  },
+  {
+    "id": "VAL-CFR-03",
+    "tier": "Intermediate",
+    "code": "5237",
+    "name": "Lumbosacral Strain",
+    "source": "38 CFR § 4.71a, Schedule of ratings - musculoskeletal system",
+    "expectedMaxSchedular": 100,
+    "expectedDBQ": "VA Form 21-0960M-14"
+  },
+  {
+    "id": "VAL-CFR-04",
+    "tier": "Intermediate",
+    "code": "8100",
+    "name": "Migraines",
+    "source": "38 CFR § 4.124a, Schedule of ratings - neurological conditions",
+    "expectedMaxSchedular": 50,
+    "expectedDBQ": "VA Form 21-0960C-8"
+  },
+  {
+    "id": "VAL-CFR-05",
+    "tier": "Intermediate",
+    "code": "6847",
+    "name": "Sleep Apnea",
+    "source": "38 CFR § 4.97, Schedule of ratings - respiratory system",
+    "expectedMaxSchedular": 100,
+    "expectedDBQ": "VA Form 21-0960N-2"
+  },
+  {
+    "id": "VAL-NEXUS-01",
+    "tier": "Advanced",
+    "prongs": [
+      true,
+      true,
+      true
+    ],
+    "expectedVerdict": "AIRTIGHT NEXUS ESTABLISHED",
+    "legalStandard": "Shedden v. Principi, 381 F.3d 1160; 38 CFR § 3.102 (Reasonable Doubt)"
+  },
+  {
+    "id": "VAL-NEXUS-02",
+    "tier": "Negative Case",
+    "prongs": [
+      true,
+      true,
+      false
+    ],
+    "expectedVerdict": "DEFICIENT",
+    "risk": "VA denial under 38 CFR § 3.303 for lack of competent medical nexus link"
+  },
+  {
+    "id": "VAL-NEXUS-03",
+    "tier": "Negative Case",
+    "prongs": [
+      true,
+      false,
+      true
+    ],
+    "expectedVerdict": "DEFICIENT",
+    "risk": "VA denial for lack of verified service incurrence / combat stressor"
+  },
+  {
+    "id": "VAL-305-01",
+    "tier": "Basic",
+    "facility": "Bruce W. Carter Department of Veterans Affairs Medical Center",
+    "source": "VA.gov Miami Health Care Directory",
+    "expectedAddress": "1201 NW 16th St, Miami, FL 33125",
+    "expectedPhone": "(305) 575-7000"
+  },
+  {
+    "id": "VAL-305-02",
+    "tier": "Basic",
+    "facility": "FIU Office of Veteran and Military Affairs (VMA)",
+    "source": "FIU Official Student Directory",
+    "expectedLocation": "FIU Modesto A. Maidique Campus (MMC), SASC 230",
+    "expectedPhone": "(305) 348-2838"
+  }
+]
