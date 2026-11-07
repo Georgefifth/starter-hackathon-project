@@ -1,0 +1,70 @@
+{
+  "project_name": "VetNexus 305",
+  "version": "1.0.0",
+  "verified_at": "2026-11-07T10:15:00Z",
+  "facts": [
+    {
+      "id": "fact_mos_engine",
+      "claim": "MIL-SPEC MOS to Civilian Career Bridge translates military duties into ATS-optimized STAR accomplishment bullets",
+      "category": "technical",
+      "status": "verified",
+      "allowed_in_video": true,
+      "evidence": [
+        "src/data/mosDatabase.ts",
+        "evidence/stage-3.5-validation/results.json"
+      ]
+    },
+    {
+      "id": "fact_cfr_auditor",
+      "claim": "Interactive 38 CFR Part 4 Disability Claim Auditor enforces the statutory 3-Prong Nexus Rule and synthesizes VA Form 21-4138 statements",
+      "category": "legal_technical",
+      "status": "verified",
+      "allowed_in_video": true,
+      "evidence": [
+        "src/data/cfrRatingDatabase.ts",
+        "evidence/stage-3.5-validation/report.md"
+      ]
+    },
+    {
+      "id": "fact_privacy",
+      "claim": "100% client-side privacy architecture with zero server-side retention of veteran medical records or PII",
+      "category": "security",
+      "status": "verified",
+      "allowed_in_video": true,
+      "evidence": [
+        "src/components/PrivacySecurity.tsx",
+        "evidence/stage-2-build.md"
+      ]
+    },
+    {
+      "id": "fact_fiu_hub",
+      "claim": "Integrated South Florida 305 & FIU Veteran Support Directory connecting to Miami VA Medical Center and 24/7 Crisis Hotline 988 Option 1",
+      "category": "community",
+      "status": "verified",
+      "allowed_in_video": true,
+      "evidence": [
+        "src/data/resources305.ts"
+      ]
+    },
+    {
+      "id": "fact_production_deploy",
+      "claim": "Live production deployment on Vercel Global Edge Network with zero errors across desktop and mobile viewports",
+      "category": "infrastructure",
+      "status": "verified",
+      "allowed_in_video": true,
+      "evidence": [
+        "https://305-veterans-hackathon-edition-nov.vercel.app",
+        "evidence/stage-3-qa/results.json"
+      ]
+    }
+  ],
+  "unverified_claims": [
+    {
+      "id": "claim_automated_e_filing",
+      "claim": "Direct API submission to VA.gov Central E-Benefits Database",
+      "status": "unverified",
+      "allowed_in_video": false,
+      "note": "Requires federal VA certified developer credentials; roadmap item"
+    }
+  ]
+}

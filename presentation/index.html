@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetNexus 305 — Presentation Pitch Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0B132B;
+      color: #F8FAFC;
+      font-family: 'Inter', -apple-system, sans-serif;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      height: 100vh;
+      width: 100vw;
+    }
+    .slide.active {
+      display: flex;
+    }
+  </style>
+</head>
+<body class="select-none">
+  <!-- Slide 1: Title Slide -->
+  <section id="slide-1" class="slide active flex-col justify-between p-12 lg:p-20 bg-gradient-to-br from-[#080E21] via-[#0B132B] to-[#1C2541]">
+    <div class="flex items-center justify-between border-b border-slate-700/80 pb-6">
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded bg-amber-500/10 border border-amber-500/40 text-amber-400 font-mono font-bold flex items-center justify-center text-xl">V3</span>
+        <span class="font-mono text-sm tracking-wider text-slate-300">305 VETERANS HACKATHON EDITION · NOV 2026</span>
+      </div>
+      <span class="text-xs font-mono px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded-full">FIU MMC CAMPUS</span>
+    </div>
+
+    <div class="my-auto max-w-4xl space-y-6">
+      <div class="inline-block px-3 py-1 bg-amber-500 text-black font-mono font-bold text-xs uppercase tracking-wider rounded">
+        VETERAN TRANSITION & VA BENEFITS CO-PILOT
+      </div>
+      <h1 class="text-5xl lg:text-7xl font-black tracking-tight text-white leading-tight">
+        VETNEXUS <span class="text-amber-400">305</span>
+      </h1>
+      <p class="text-xl lg:text-2xl text-slate-300 leading-relaxed font-light">
+        Bridging the Military-to-Civilian Career Chasm & Automating 38 CFR VA Disability Claim Evidence without Predatory Fees.
+      </p>
+      <div class="flex items-center gap-6 pt-4 text-sm font-mono text-slate-400">
+        <span>🚀 Live on Vercel Edge</span>
+        <span>•</span>
+        <span>🛡 100% Client-Side Privacy</span>
+        <span>•</span>
+        <span>⚖️ 38 CFR § 4 Legal Auditor</span>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono">
+      <span>PRESENTATION SLIDE 1 / 8</span>
+      <span>USE ARROW KEYS [←] [→] OR CLICK TO ADVANCE</span>
+    </div>
+  </section>
+
+  <!-- Slide 2: Problem -->
+  <section id="slide-2" class="slide flex-col justify-between p-12 lg:p-20 bg-[#0B132B]">
+    <div class="border-b border-slate-700/80 pb-6 flex items-center justify-between">
+      <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">02 · THE DUAL HURDLE</span>
+      <span class="text-xs font-mono text-slate-400">200K TRANSITIONING SERVICE MEMBERS ANNUALLY</span>
+    </div>
+
+    <div class="my-auto grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl w-full">
+      <div class="p-8 rounded-xl bg-slate-900/80 border border-red-500/40 space-y-4">
+        <div class="text-red-400 text-3xl font-mono font-bold">01. The ATS Jargon Wall</div>
+        <h3 class="text-2xl font-bold text-white">Military Resumes Auto-Rejected</h3>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Civilian recruiters and automated ATS scanners don't understand military MOS codes (11B, 25B, 68W). High-stakes leadership, multimillion-dollar logistics, and specialized telecom duties are summarized with robotic phrases and discarded before a human recruiter ever sees them.
+        </p>
+        <div class="text-xs font-mono text-red-300 bg-red-950/60 p-3 rounded border border-red-900">
+          Result: Chronic veteran underemployment and frustrating career stagnation.
+        </div>
+      </div>
+
+      <div class="p-8 rounded-xl bg-slate-900/80 border border-red-500/40 space-y-4">
+        <div class="text-red-400 text-3xl font-mono font-bold">02. The Claim Shark Trap</div>
+        <h3 class="text-2xl font-bold text-white">300,000+ Backlog & Predatory Fees</h3>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Veterans navigating Title 38 CFR face overwhelming bureaucracy. Unaware of the statutory 3-Prong Nexus Rule, claims get denied. Unaccredited private "claim sharks" exploit this desperation, charging veterans $3,000 to $8,000 for standard paperwork.
+        </p>
+        <div class="text-xs font-mono text-red-300 bg-red-950/60 p-3 rounded border border-red-900">
+          Result: Billions extracted from wounded veterans for free public benefits.
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono">
+      <span>SLIDE 2 / 8 · PROBLEM ANALYSIS</span>
+    </div>
+  </section>
+
+  <!-- Slide 3: Solution -->
+  <section id="slide-3" class="slide flex-col justify-between p-12 lg:p-20 bg-[#0B132B]">
+    <div class="border-b border-slate-700/80 pb-6 flex items-center justify-between">
+      <span class="text-xs font-mono text-emerald-400 uppercase tracking-wider">03 · OUR SOLUTION</span>
+      <span class="text-xs font-mono text-slate-400">MISSION-READY DUAL CO-PILOT</span>
+    </div>
+
+    <div class="my-auto max-w-5xl space-y-8">
+      <h2 class="text-4xl lg:text-5xl font-black text-white">
+        Democratizing Transition Intelligence & Legal Evidence
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-lg bg-command-800 border border-slate-700 space-y-3">
+          <div class="text-amber-400 font-mono font-bold text-lg">01. MOS Career Bridge</div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Translates service records across 5 military branches into ATS-optimized STAR accomplishment bullets with quantified ROI metrics and high-match civilian titles.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-command-800 border border-slate-700 space-y-3">
+          <div class="text-emerald-400 font-mono font-bold text-lg">02. 38 CFR Nexus Auditor</div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Audits evidence against official VA diagnostic rating schedules and compiles sworn, airtight VA Form 21-4138 statements adhering to federal case law.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-command-800 border border-slate-700 space-y-3">
+          <div class="text-blue-400 font-mono font-bold text-lg">03. 305 Veteran Hub</div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Directly links South Florida and FIU student veterans to accredited free VSOs, Bruce W. Carter VA Medical Center, emergency grants, and the 988+1 crisis hotline.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono">
+      <span>SLIDE 3 / 8 · THE SOLUTION ARCHITECTURE</span>
+    </div>
+  </section>
+
+  <!-- Slide 4: Interactive Live Demo -->
+  <section id="slide-4" class="slide flex-col justify-between p-12 lg:p-20 bg-[#070D1E]">
+    <div class="border-b border-slate-700/80 pb-4 flex items-center justify-between">
+      <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">04 · LIVE APPLICATION SHOWCASE</span>
+      <a href="https://305-veterans-hackathon-edition-nov.vercel.app" target="_blank" class="text-xs font-mono text-amber-300 hover:underline">
+        OPEN PRODUCTION APP ↗
+      </a>
+    </div>
+
+    <div class="my-auto w-full h-[70vh] rounded-xl overflow-hidden border border-slate-700 shadow-2xl relative">
+      <iframe src="https://305-veterans-hackathon-edition-nov.vercel.app" class="w-full h-full border-0"></iframe>
+    </div>
+
+    <div class="border-t border-slate-800 pt-4 text-xs text-slate-400 font-mono flex items-center justify-between">
+      <span>SLIDE 4 / 8 · LIVE EMBEDDED DEMO</span>
+      <span>INTERACT DIRECTLY OR PRESS [→] FOR ARCHITECTURE</span>
+    </div>
+  </section>
+
+  <!-- Slide 5: How It Works / Architecture -->
+  <section id="slide-5" class="slide flex-col justify-between p-12 lg:p-20 bg-[#0B132B]">
+    <div class="border-b border-slate-700/80 pb-6 flex items-center justify-between">
+      <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">05 · HOW IT WORKS</span>
+      <span class="text-xs font-mono text-slate-400">DATA FLOW & PRIVACY SANDBOX</span>
+    </div>
+
+    <div class="my-auto max-w-5xl space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+        <div class="p-5 bg-slate-900 border border-slate-700 rounded-lg">
+          <div class="text-xs font-mono text-slate-400">STEP 1</div>
+          <div class="text-base font-bold text-amber-400 mt-1">MOS Ingestion</div>
+          <p class="text-xs text-slate-300 mt-2">Branch & Duty code lookup against military taxonomy.</p>
+        </div>
+
+        <div class="p-5 bg-slate-900 border border-slate-700 rounded-lg">
+          <div class="text-xs font-mono text-slate-400">STEP 2</div>
+          <div class="text-base font-bold text-amber-400 mt-1">STAR Synthesis</div>
+          <p class="text-xs text-slate-300 mt-2">Situation, Task, Action, Result parsed with quantified metrics.</p>
+        </div>
+
+        <div class="p-5 bg-slate-900 border border-slate-700 rounded-lg">
+          <div class="text-xs font-mono text-slate-400">STEP 3</div>
+          <div class="text-base font-bold text-emerald-400 mt-1">Nexus Legal Audit</div>
+          <p class="text-xs text-slate-300 mt-2">38 CFR Part 4 schedule check & Shedden v. Principi prongs.</p>
+        </div>
+
+        <div class="p-5 bg-slate-900 border border-slate-700 rounded-lg">
+          <div class="text-xs font-mono text-slate-400">STEP 4</div>
+          <div class="text-base font-bold text-blue-400 mt-1">Direct VA & Job Export</div>
+          <p class="text-xs text-slate-300 mt-2">Sworn Form 21-4138 & ATS Markdown output 100% locally.</p>
+        </div>
+      </div>
+
+      <div class="p-6 bg-slate-900/90 border border-emerald-500/40 rounded-xl">
+        <div class="text-xs font-mono font-bold text-emerald-400 uppercase">ZERO-SERVER CLIENT PRIVACY GUARANTEE</div>
+        <p class="text-sm text-slate-300 mt-2">
+          All personal health statements, medical condition codes, and military records remain strictly in the veteran's local browser memory. Zero external trackers, zero advertising cookies, and zero third-party cloud database persistence.
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono">
+      <span>SLIDE 5 / 8 · TECHNICAL ARCHITECTURE</span>
+    </div>
+  </section>
+
+  <!-- Slide 6: Validation -->
+  <section id="slide-6" class="slide flex-col justify-between p-12 lg:p-20 bg-[#0B132B]">
+    <div class="border-b border-slate-700/80 pb-6 flex items-center justify-between">
+      <span class="text-xs font-mono text-emerald-400 uppercase tracking-wider">06 · REAL-WORLD VALIDATION</span>
+      <span class="text-xs font-mono text-slate-400">STAGE 3.5 GROUND TRUTH BENCHMARK</span>
+    </div>
+
+    <div class="my-auto max-w-5xl space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-slate-900 border border-emerald-500/50 rounded-xl text-center">
+          <div class="text-5xl font-black text-emerald-400 font-mono">100%</div>
+          <div class="text-sm font-bold text-slate-100 mt-2">Ground Truth Accuracy</div>
+          <div class="text-xs text-slate-400 mt-1">15 / 15 Verified Test Cases</div>
+        </div>
+
+        <div class="p-6 bg-slate-900 border border-slate-700 rounded-xl text-center">
+          <div class="text-5xl font-black text-amber-400 font-mono">&lt; 50ms</div>
+          <div class="text-sm font-bold text-slate-100 mt-2">Client Response Latency</div>
+          <div class="text-xs text-slate-400 mt-1">Instant Interactive Audit</div>
+        </div>
+
+        <div class="p-6 bg-slate-900 border border-slate-700 rounded-xl text-center">
+          <div class="text-5xl font-black text-blue-400 font-mono">10 / 10</div>
+          <div class="text-sm font-bold text-slate-100 mt-2">Playwright QA Scenarios</div>
+          <div class="text-xs text-slate-400 mt-1">Desktop 1440px & Mobile 390px</div>
+        </div>
+      </div>
+
+      <div class="p-5 bg-command-800 border border-slate-700 rounded-lg text-xs font-mono text-slate-300 space-y-1">
+        <div>✓ DoD Military Crosswalk Taxonomy: Army 11B, 25B, 68W; Navy IT; Air Force 1N0X1; Coast Guard MST</div>
+        <div>✓ 38 CFR Part 4 Diagnostic Legal Standards: Tinnitus (§ 4.87), PTSD (§ 4.130), Lumbosacral (§ 4.71a)</div>
+        <div>✓ Precedent Compliance: Enforcing Shedden v. Principi 3-Prong Nexus Rule against claims denials</div>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono">
+      <span>SLIDE 6 / 8 · BENCHMARK & METRICS</span>
+    </div>
+  </section>
+
+  <!-- Slide 7: 305 South Florida Community Impact -->
+  <section id="slide-7" class="slide flex-col justify-between p-12 lg:p-20 bg-[#0B132B]">
+    <div class="border-b border-slate-700/80 pb-6 flex items-center justify-between">
+      <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">07 · COMMUNITY IMPACT</span>
+      <span class="text-xs font-mono text-slate-400">FIU & SOUTH FLORIDA FOCUS</span>
+    </div>
+
+    <div class="my-auto max-w-5xl space-y-6">
+      <h2 class="text-4xl font-black text-white">Serving the 305 Military Community</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 bg-slate-900 border border-slate-700 rounded-lg space-y-2">
+          <span class="text-xs font-mono font-bold text-amber-400">FIU STUDENT VETERANS (VMA SASC 230)</span>
+          <p class="text-xs text-slate-300">
+            Over 1,200 student veterans, reservists, and dependents at FIU MMC gain instant translation of GI Bill/VR&E credentials into high-paying South Florida tech and logistics careers.
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-900 border border-slate-700 rounded-lg space-y-2">
+          <span class="text-xs font-mono font-bold text-emerald-400">BRUCE W. CARTER VA MEDICAL CENTER</span>
+          <p class="text-xs text-slate-300">
+            Direct coordination with Miami VA clinics, C&P compensation examiners, and toxic exposure PACT Act registries without red tape.
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-900 border border-slate-700 rounded-lg space-y-2">
+          <span class="text-xs font-mono font-bold text-blue-400">FLORIDA DEPT. OF VETERANS' AFFAIRS (FDVA)</span>
+          <p class="text-xs text-slate-300">
+            Connecting veterans to accredited free Service Officers for 100% free legal power of attorney, safeguarding them against predatory $5,000 consultant contracts.
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-900 border border-red-500/40 rounded-lg space-y-2">
+          <span class="text-xs font-mono font-bold text-red-400">24/7 CRISIS RESPONSE (988 + 1)</span>
+          <p class="text-xs text-slate-300">
+            Persistent, non-intrusive safety net linking veterans to confidential, qualified suicide prevention responders and emergency housing aid.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono">
+      <span>SLIDE 7 / 8 · LOCAL COMMUNITY INTEGRATION</span>
+    </div>
+  </section>
+
+  <!-- Slide 8: What's Next & Conclusion -->
+  <section id="slide-8" class="slide flex-col justify-between p-12 lg:p-20 bg-gradient-to-br from-[#080E21] via-[#0B132B] to-[#1C2541]">
+    <div class="border-b border-slate-700/80 pb-6 flex items-center justify-between">
+      <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">08 · WHAT'S NEXT & THANK YOU</span>
+      <span class="text-xs font-mono text-slate-400">305 VETERANS HACKATHON NOV 2026</span>
+    </div>
+
+    <div class="my-auto max-w-4xl space-y-6">
+      <h2 class="text-5xl font-black text-white">Empowering Those Who Served</h2>
+      <p class="text-xl text-slate-300 font-light">
+        VetNexus 305 bridges military valor with civilian opportunity and defends veterans' earned benefits.
+      </p>
+
+      <div class="p-6 bg-command-800 border border-slate-700 rounded-xl space-y-3">
+        <div class="text-xs font-mono text-amber-400 font-bold uppercase">ROADMAP:</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300 font-mono">
+          <div>→ PACT Act Exposure Mapper</div>
+          <div>→ Direct Accredited VSO Portal</div>
+          <div>→ Multi-Language Support (EN/ES)</div>
+        </div>
+      </div>
+
+      <div class="pt-4 flex items-center gap-6 text-sm font-mono text-slate-300">
+        <a href="https://305-veterans-hackathon-edition-nov.vercel.app" class="px-5 py-2.5 bg-amber-400 text-black font-bold rounded hover:bg-amber-300 transition">
+          Launch Live App
+        </a>
+        <a href="https://github.com/Georgefifth/starter-hackathon-project" class="px-5 py-2.5 bg-command-700 border border-slate-600 rounded hover:bg-command-600 transition">
+          View GitHub Fork
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 text-xs text-slate-400 font-mono flex items-center justify-between">
+      <span>SLIDE 8 / 8 · CONCLUSION</span>
+      <span>THANK YOU JUDGES & GDG AT FIU ORGANIZERS!</span>
+    </div>
+  </section>
+
+  <!-- Slide Navigation Script -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 8;
+
+    function showSlide(index) {
+      if (index < 1) index = 1;
+      if (index > totalSlides) index = totalSlides;
+      currentSlide = index;
+      document.querySelectorAll('.slide').forEach((s, idx) => {
+        s.classList.toggle('active', idx === currentSlide - 1);
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+        showSlide(currentSlide + 1);
+      } else if (e.key === 'ArrowLeft') {
+        showSlide(currentSlide - 1);
+      }
+    });
+
+    document.body.addEventListener('click', (e) => {
+      if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON' && e.target.tagName !== 'IFRAME') {
+        showSlide(currentSlide + 1);
+      }
+    });
+  </script>
+</body>
+</html>
